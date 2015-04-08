@@ -9,5 +9,10 @@ class Develop
 	~Develop()
 	{
 	}
+	
+	int getVersion()
+	{
+		return 1;
+	}
 };
 
