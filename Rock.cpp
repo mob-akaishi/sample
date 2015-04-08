@@ -1,3 +1,4 @@
+#include <fstream>
 
 
 class Rock
@@ -8,6 +9,13 @@ class Rock
 	
 	~Rock()
 	{
+	}
+	
+	void IOS(std::string fileName)
+	{
+		std::ifstream ifs(fileName, std::ios::binary);
+		
+		ifs.close();
 	}
 };
 
