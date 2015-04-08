@@ -1,0 +1,13 @@
+
+
+class Develop
+{
+	Develop()
+	{
+	}
+	
+	~Develop()
+	{
+	}
+};
+
