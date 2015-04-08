@@ -9,5 +9,7 @@ class Master
 	~Master()
 	{
 	}
+	
+	private int m_rock;
 };
 
