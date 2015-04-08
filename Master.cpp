@@ -1,0 +1,13 @@
+
+
+class Master
+{
+	Master()
+	{
+	}
+	
+	~Master()
+	{
+	}
+};
+
