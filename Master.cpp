@@ -3,6 +3,8 @@
 class Master
 {
 	Master()
+	:
+	m_lock(0xffff)
 	{
 	}
 	
@@ -10,17 +12,22 @@ class Master
 	{
 	}
 	
-	private int m_rock;
+	private int m_lock;
 	
-	void Rock(int seed)
+	void Lock(int seed)
 	{
-		m_rock = 0x100;
+		m_lock = 0x100;
 		
-		m_rock += 0x404*(3*seed);
+		m_lock += 0x404*(3*seed);
 		
-		m_rock /= (2 + seed);
+		m_lock /= (2 + seed);
 		
-		m_rock -= seed^99;
+		m_lock -= seed^99;
+	}
+	
+	void Unlock()
+	{
+		m_lock = 0xffff;
 	}
 };
 
