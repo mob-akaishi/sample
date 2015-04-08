@@ -1,0 +1,13 @@
+
+
+class Rock
+{
+	Rock()
+	{
+	}
+	
+	~Rock()
+	{
+	}
+};
+
