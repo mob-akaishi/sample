@@ -15,6 +15,8 @@ class Master
 	void Rock(int seed)
 	{
 		m_rock /= (2 + seed);
+
+		m_rock -= seed^99;
 	}
 };
 
