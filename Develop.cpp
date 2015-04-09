@@ -1,18 +1,21 @@
+#include "Develop.h"
 
-
-class Develop
+namespace
 {
-	Develop()
-	{
-	}
-	
-	~Develop()
-	{
-	}
-	
-	int getVersion()
-	{
-		return 1;
-	}
-};
+	const int VERSION = 2;
+}
+
+
+Develop::Develop()
+{
+}
+
+Develop::~Develop()
+{
+}
+
+int Develop::getVersion()
+{
+	return VERSION;
+}
 
