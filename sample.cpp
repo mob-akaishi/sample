@@ -1,5 +1,10 @@
 #include <iostream>
 
+namespace
+{
+	const int DATA_INIT = 10;
+}
+
 int main()
 {
 	std::cout << "Hellow World," << std::endl;
@@ -7,7 +12,7 @@ int main()
 	
 	int g = 0x100;
 	
-	int a = 0;
+	int a = DATA_INIT;
 	std::cout << a << std::endl;
 	
 	a += 100;
